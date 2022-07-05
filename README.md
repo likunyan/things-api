@@ -8,3 +8,4 @@
 4. `npm install`
 5. `cp .env.example .env`
 6. `php artisan key:generate`
+7. `php artisan migrate`
