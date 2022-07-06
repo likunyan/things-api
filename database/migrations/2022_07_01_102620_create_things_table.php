@@ -23,9 +23,9 @@ return new class extends Migration {
             $table->date('expired_at')->nullable()->comment('过期日期');
             $table->boolean('is_expiration_reminder')->unsigned()->nullable()->default(0)->comment('过期是否提醒');
             $table->timestamps();
-        });
 
-        \DB::statement("ALTER TABLE `things` comment '物品'");
+            $table->comment('物品');
+        });
     }
 
     /**

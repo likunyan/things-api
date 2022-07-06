@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name')->comment('名称');
             $table->timestamps();
+
+            $table->comment('位置');
         });
     }
 
